@@ -1,7 +1,7 @@
 {
   "name": "@semio/data",
   "description": "Semio's value model: animatable value types, the data store port and its values store, and the Arora value encoding and id conventions.",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/semio-ai/studio.git",
