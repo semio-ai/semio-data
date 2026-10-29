@@ -1,5 +1,5 @@
 import { createContext, useContext } from "react";
-import { fromTaggedValue, type ScalarValue, type TaggedValue } from "./scene-binding";
+import { fromTaggedValue, type ScalarValue, type TaggedValue } from "./tagged-value";
 
 /**
  * An arora `Value` as it crosses the JS boundary: the externally tagged JSON

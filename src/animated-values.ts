@@ -242,10 +242,6 @@ export interface AnimatableColor {
   pub?: AnimatablePubInfo;
 }
 
-export function instanceOfRawBoolean(object: any): object is RawBoolean {
-  return typeof object === "boolean";
-}
-
 export function instanceOfRawNumber(object: any): object is RawNumber {
   return typeof object === "number";
 }

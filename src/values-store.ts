@@ -2,7 +2,7 @@ import { create } from "zustand";
 import { subscribeWithSelector } from "zustand/middleware";
 import type { RawValue } from "./animated-values";
 import type { AroraValue, DataStore, StateChange } from "./data-store";
-import { fromTaggedValue, toTaggedValue, type ScalarValue } from "./scene-binding";
+import { fromTaggedValue, toTaggedValue, type ScalarValue } from "./tagged-value";
 
 export interface ValuesData {
   values: Map<string, RawValue | undefined>;

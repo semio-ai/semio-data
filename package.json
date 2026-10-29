@@ -1,0 +1,54 @@
+{
+  "name": "@semio/data",
+  "description": "Semio's value model: animatable value types, the data store port and its values store, and the Arora value encoding and id conventions.",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semio-ai/semio_studio.git",
+    "directory": "packages/data"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "source": "./src/index.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "sideEffects": false,
+  "license": "Apache-2.0",
+  "files": [
+    "dist/**",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts src/index.ts --external react",
+    "dev": "tsup src/index.ts --format esm,cjs --watch --dts src/index.ts --external react",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "test:unit": "vitest run",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@semio/eslint-config": "*",
+    "@semio/typescript-config": "*",
+    "@types/color": "^3.0.6",
+    "@types/react": "^19.1.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vitest": "^5.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "color": "^4.2.3",
+    "react": "^19.1.0",
+    "zustand": "^5.0.2"
+  }
+}
