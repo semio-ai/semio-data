@@ -1,5 +1,11 @@
 # @semio/data
 
+## 0.1.1
+
+### Patch Changes
+
+- 40a8305: The package is released from its own repository, semio-ai/semio-data, and its npm page links there.
+
 ## 0.1.0
 
 ### Minor Changes
